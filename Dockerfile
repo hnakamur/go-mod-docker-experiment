@@ -4,5 +4,5 @@ WORKDIR /src/app
 COPY go.mod go.sum ./
 RUN go mod download
 COPY hello.go hello_test.go ./
-RUN go get golang.org/x/text
+RUN go get rsc.io/sampler
 CMD ["/bin/sh"]
